@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Spam Detector</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">
+            <i class="fas fa-shield-alt"></i> Email Spam Detector
+        </h1>
+        <p class="description">
+            Smart email analysis using machine learning. Check if an email is spam or legitimate in seconds.
+        </p>
+        
+        <div class="card">
+            <form id="prediction-form">
+                <textarea 
+                    id="email-input" 
+                    placeholder="Enter or paste email content here...&#10;&#10;Sample:&#10;Subject: Limited Time Offer!&#10;Hello,&#10;You've been selected for an exclusive deal..." 
+                    required
+                ></textarea>
+                <button type="submit" class="submit-btn" id="submit-btn">
+                    <i class="fas fa-search"></i> Analyze Email
+                </button>
+            </form>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
